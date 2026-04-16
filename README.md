@@ -19,13 +19,15 @@ attendance_tracker_{input}
 
 ## 📂 Project Structure
 
+
 attendance_tracker_{input}/
 ├── attendance_checker.py
 ├── Helpers/
-│ ├── assets.csv
-│ └── config.json
+│   ├── assets.csv
+│   └── config.json
 └── reports/
-└── reports.log
+    └── reports.log
+    
 
 ---
 
