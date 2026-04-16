@@ -2,31 +2,32 @@
 
 #Ask user for input
 
-echo "Enter project name:" 
+echo "Enter base name:" 
 read input
 
 
 # Parent directory
 
+
 BASE_DIR="attendance_tracker_${input}"
 
-echo "Enter project name:" 
-read input
+
+echo "Creating project:$BASE_DIR"
 
 # Create directories
 
 
-mkdir -p "attendance_tracker_$input/Helpers" 
-mkdir -p "attendance_tracker_$input/reports"
+mkdir -p  "$BASE_DIR/Helpers" 
+mkdir -p  "$BASE_DIR/reports"
 
 
 # Copy files into structure
 
 
-cp attendance_checker.py “$BASE_DIR/attendance_checker.py"
-cp  assets.csv  “$BASE_DIR/Helpers/assets.csv"
-cp  config.json “$BASE_DIR/Helpers/config.json”
-cp  reports.log  “$BASE_DIR/reports/reports.log"
+cp attendance_checker.py  "$BASE_DIR/attendance_checker.py"
+cp  assets.csv   "$BASE_DIR/Helpers/assets.csv"
+cp  config.json  "$BASE_DIR/Helpers/config.json"
+cp  reports.log  "$BASE_DIR/reports/reports.log"
 
 
 # Trap function for Ctrl+C
@@ -53,6 +54,7 @@ read -p "Do you want to update attendance thresholds? (y/n): " choice
 if [[ "$choice" =~ ^[yY]$ ]]; then
     read -p "Enter Warning threshold (%): " warn
     read -p "Enter Failure threshold (%): " fail
+
 
 # Validate input (numbers only)
 
@@ -84,6 +86,10 @@ fi
 
 # Environment validation
 
+
+
+
+
 echo "Checking Python installation..."
 
 if command -v python3 &>/dev/null; then
@@ -92,3 +98,4 @@ else
     echo "Python3 is NOT installed."
     exit 1
 fi
+
