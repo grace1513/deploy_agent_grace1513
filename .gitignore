@@ -1,0 +1,10 @@
+# Ignore generated project folders
+attendance_tracker_*/
+
+# Ignore archives
+*.tar.gz
+
+# Ignore logs and runtime files
+*.log
+reports.log
+assets.csv
