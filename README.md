@@ -152,3 +152,20 @@ a reliable and reusable project setup tool.
 ## 👤 Author
 
 **Grace**
+
+
+---
+
+## 🎥 Project Pitch Video
+
+Watch a full walkthrough of the **Attendance Tracker Project Generator**, including:
+- Project purpose and design
+- Script execution demo
+- Input validation logic
+- Use of advanced Bash features like `sed` and `trap`
+
+🔗 **Click to watch:**
+
+https://drive.google.com/file/d/1J6_9FKrj2UHJMUQV8isxnNCNj8MOH4tE/view?usp=drive_link
+
+---
