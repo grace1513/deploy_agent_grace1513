@@ -87,10 +87,6 @@ fi
 
 echo " Valid name: $name"
 
-# ======================
-# 4. PROJECT CREATION (THIS IS THE PART YOU WANTED)
-# ======================
-
 # SAFE NAME GENERATION (for folder safety)
 safe_name="${name// /_}"
 
